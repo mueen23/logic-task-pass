@@ -1,0 +1,40 @@
+ 'q1'
+ def remove(self):    
+    old_string = 'h?ello, m?y? name? is ?nik!'
+    new_string = old_string.replace(self, '')
+    print(new_string)
+remove('?)
+'''''''''''
+'q2'
+class Hassanien:
+    def __init__(self,limit):
+        self.limit=limit
+    def prime(limit):
+        low = 2
+        primes = []
+        for i in range(low, limit + 1):
+            flag = 0
+            if i < 2:
+                continue
+            if i == 2:
+                primes.append(2)
+                continue
+            for x in range(2, i):
+                if i % x == 0:
+                    flag = 1
+                    break
+            if flag == 0:
+                primes.append(i)
+        print(primes)
+
+Hassanien.prime(10)
+'''''''''''''
+'q3'
+def count(sel,r):
+    res = 0
+    for i in range(len(sel)):
+        if (sel[i] == r):
+            res +=1
+    print(res)
+        
+count("sas","s")
