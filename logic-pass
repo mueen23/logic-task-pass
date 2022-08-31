@@ -1,16 +1,18 @@
  'q1'
- def remove(self):    
+k = str(input("charcter:"))
+def remove(k):    
     old_string = 'h?ello, m?y? name? is ?nik!'
-    new_string = old_string.replace(self, '')
+    new_string = old_string.replace(k, '')
     print(new_string)
-remove('?)
+remove(k)
 '''''''''''
 'q2'
 class Hassanien:
-    def __init__(self,limit):
-        self.limit=limit
-    def prime(limit):
-        low = 2
+    def __init__(self):
+        pass
+    def prime():
+        low = 0
+        limit= int(input('enter range:'))
         primes = []
         for i in range(low, limit + 1):
             flag = 0
@@ -27,14 +29,16 @@ class Hassanien:
                 primes.append(i)
         print(primes)
 
-Hassanien.prime(10)
+Hassanien.prime()
 '''''''''''''
 'q3'
-def count(sel,r):
+sel =str(input('enter string: '))
+r= str(input('enter charcter: '))
+def count():
     res = 0
     for i in range(len(sel)):
         if (sel[i] == r):
             res +=1
     print(res)
-        
-count("sas","s")
+       
+count()
